@@ -26,6 +26,7 @@ const productionPlugin = new webpack.DefinePlugin({
 
 const base = {
     entry: [
+        'babel-polyfill',
         PATHS.app,
     ],
     output: { 
