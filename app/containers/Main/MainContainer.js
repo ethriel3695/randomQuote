@@ -1,9 +1,8 @@
-import React from 'react'
-import { Navigation } from 'components'
-import { container, innerContainer } from './styles.css'
+import React from 'react';
+import { Navigation } from 'components';
+import { container, innerContainer } from './styles.css';
 
 class MainContainer extends React.Component {
-
   render () {
     return (
       <div className={container}>
@@ -12,8 +11,8 @@ class MainContainer extends React.Component {
           {this.props.children}
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default MainContainer
+export default MainContainer;

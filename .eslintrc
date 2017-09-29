@@ -19,7 +19,7 @@
     "rules": {
       "no-console": [2, {"allow": ["warn", "error"]}],
       "comma-dangle": [2, "always-multiline"],
-      "semi": [2, "never"],
+      "semi": [2, "always"],
       "no-extra-semi": 2,
       "jsx-quotes": [2, "prefer-single"],
       "react/jsx-boolean-value": [2, "always"],

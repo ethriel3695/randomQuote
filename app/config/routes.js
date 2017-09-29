@@ -1,6 +1,6 @@
-import React from 'react'
-import { HashRouter, BrowserRouter, Route, Switch } from 'react-router-dom'
-import { MainContainer, HomeContainer, randomQuoteContainer } from 'containers'
+import React from 'react';
+import { HashRouter, BrowserRouter, Route, Switch } from 'react-router-dom';
+import { MainContainer, HomeContainer, randomQuoteContainer } from 'containers';
 
 const routes = (
   <BrowserRouter>
@@ -11,6 +11,6 @@ const routes = (
       <Route path ='/error' component={HomeContainer} />
     </div>
   </BrowserRouter>
-)
+);
 
-export default routes
+export default routes;

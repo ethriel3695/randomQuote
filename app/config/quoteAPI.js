@@ -63,11 +63,10 @@ import axios from 'axios';
 //     .catch(handleError)
 // }
 export async function fetchRandomQuote () {
-    // const encodedURI = window.encodeURI
-    // ("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=25&callback=");
-    const encodedURI = window.encodeURI
-    ("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=25&callback=");
-    
-    const response = await axios.get(encodedURI)
-        return response.data;
-};
+  // const encodedURI = window.encodeURI
+  // ("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=25&callback=");
+  const encodedURI = window.encodeURI('https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=25&callback=');
+
+  const response = await axios.get(encodedURI);
+  return response.data;
+}
