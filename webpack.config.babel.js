@@ -1,6 +1,6 @@
-import webpack from 'webpack'
-import path from 'path'
-import HtmlWebpackPlugin from 'html-webpack-plugin'
+import webpack from 'webpack';
+import path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const LAUNCH_COMMAND = process.env.npm_lifecycle_event
 

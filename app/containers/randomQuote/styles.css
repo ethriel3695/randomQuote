@@ -1,0 +1,9 @@
+.quoteButton {
+    font-size: 40px;
+}
+
+.quoteContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

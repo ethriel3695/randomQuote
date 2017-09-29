@@ -2,6 +2,7 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import { fetchRandomQuote } from '../../config/quoteAPI';
 import RandomQuote from '../../components/randomQuote/randomQuote.js';
+import { quoteButton, quoteContainer } from './styles.css';
 
 let quotes = [];
 let random = 0;
@@ -11,7 +12,7 @@ class RandomQuoteContainer extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      repos: null,
+      repos: {ID: 0, Title: 'Author', Content: 'Welcome to daily inspiration!'},
       content: '',
       author: '',
     };
@@ -47,7 +48,7 @@ class RandomQuoteContainer extends React.Component {
       if (quote !== null && this.state.repos !== null) {
         if (quote.Id === this.state.repos.ID) {
           quotes = await fetchRandomQuote();
-          quote = this.singleQuoteContent(quotes, random);
+          quote.author = this.htmlParseQuoteContent(quote.author);
         }
       }
 
@@ -71,10 +72,10 @@ class RandomQuoteContainer extends React.Component {
 
   render () {
     return (
-      <div>
-        {<RandomQuote quotes={this.state.repos} content={this.state.content} />}
-        <button className='btn btn-primary'
-          onClick={this.updateQuote}>{'Get Quote'}</button>
+      <div className='quoteContainer'>
+        <RandomQuote quotes={this.state.repos} content={this.state.content}/>
+        <button className='quoteButton'
+          onClick={this.updateQuote}>{'Inspire Me!'}</button>
       </div>
     );
   }

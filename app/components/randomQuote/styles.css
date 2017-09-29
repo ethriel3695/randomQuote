@@ -1,0 +1,14 @@
+.quoteContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quoteContent, li{
+    font-size: 30px;
+    list-style-type: none;
+}
+
+.quoteAuthor {
+    font-size: 30px;
+}
