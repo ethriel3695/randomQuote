@@ -1,14 +1,15 @@
-.quoteContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+ .quoteContainer {
+    composes: centeredContainer from 'sharedStyles/styles.css';
+} 
 
-.quoteContent, li{
-    font-size: 30px;
-    list-style-type: none;
+.quoteContent {
+    composes: textCenter from 'sharedStyles/styles.css';
 }
 
 .quoteAuthor {
-    font-size: 30px;
+    margin-left: auto;
+    text-align: right;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

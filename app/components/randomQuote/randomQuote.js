@@ -2,21 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { quoteContainer, quoteContent, quoteAuthor } from './styles.css';
 
-let quotesArray = [];
+RandomQuote.propTypes = {
+  quotes: PropTypes.object.isRequired,
+  content: PropTypes.string.isRequired,
+};
 
 export default function RandomQuote ({ quotes, content }) {
   return (
     quotes !== null
-      ? <div className='quoteContainer'>
-          <ul key={quotes.ID}>
-            <li className='quoteContent'>
-              {content}
-            </li>
-            <li className='quoteAuthor'>{quotes.title}</li>
-          </ul>
+      ? <div className={quoteContainer}>
+        <div className={quoteContent}>
+          {content}
         </div>
-      : <ul>
+        <span className={quoteAuthor}>{`${String.fromCharCode(8210)}${quotes.title}`}</span>
+      </div>
+      : <div>
         {'The Quote API is not working currently.'}
-      </ul>
+      </div>
   );
 }

@@ -1,9 +1,54 @@
-.quoteButton {
-    font-size: 40px;
+.quoteContainer {
+  composes: centeredContainer from 'sharedStyles/styles.css';
 }
 
-.quoteContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.buttonContainer {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; */
+}
+
+.quoteButton {
+    align-self: flex-end;
+    background: #3B5998;
+    color: #fff;
+    padding: 7px;
+    border-radius: 5px;
+    border-width: 0;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.quoteButton:hover:enabled {
+    background:
+        linear-gradient(#1a1a1a,#0a0a0a);
+    color: #fff;
+    text-decoration: none;
+}
+
+.quoteButton:active {
+    transform: translateY(1px);
+}
+
+.twitterButton {
+    align-self: flex-start;
+    background: #3B5998;
+    color: #fff;
+    padding: 7px;
+    border-radius: 5px;
+    border-width: 0;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.twitterButton:hover:enabled {
+    background:
+        linear-gradient(#1a1a1a,#0a0a0a);
+    color: #fff;
+    text-decoration: none;
+}
+
+.twitterButton:active {
+    transform: translateY(1px);
 }
