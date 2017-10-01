@@ -2,7 +2,7 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import { fetchRandomQuote } from '../../config/quoteAPI';
 import RandomQuote from '../../components/randomQuote/randomQuote.js';
-import { quoteButton, twitterButton, quoteContainer } from './styles.css';
+import { quoteButton, twitterButton, quoteContainer, buttonContainer } from './styles.css';
 
 let quotes = [];
 let random = 0;
@@ -74,10 +74,12 @@ class RandomQuoteContainer extends React.Component {
     return (
       <div className={quoteContainer}>
         <RandomQuote quotes={this.state.repos} content={this.state.content} />
-        <button className={quoteButton}
-          onClick={this.updateQuote}>{'Inspire Me!'}</button>
-        <button className={twitterButton}
-          onClick={''}>{'Tweet!'}</button>
+        <div className={buttonContainer}>
+          <button className={twitterButton}
+            onClick={''}>{'Tweet!'}</button>
+          <button className={quoteButton}
+            onClick={this.updateQuote}>{'Inspire Me!'}</button>
+        </div>
       </div>
     );
   }
