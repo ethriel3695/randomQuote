@@ -1,15 +1,14 @@
 .quoteContainer {
-  composes: centeredContainer from 'sharedStyles/styles.css';
+  /*composes: centeredContainer from 'sharedStyles/styles.css';*/
 }
 
 .buttonContainer {
     display: flex;
-    justify-content: space-between;
-    margin-left: auto;
+    /*align-self: space-between;*/
 }
 
 .quoteButton {
-    /* align-self: flex-end; */
+    margin-left: auto;
     background: #3B5998;
     color: #fff;
     padding: 7px;
@@ -31,7 +30,7 @@
 }
 
 .twitterButton {
-    /* align-self: flex-start; */
+    margin-right: auto;
     background: #3B5998;
     color: #fff;
     padding: 7px;
