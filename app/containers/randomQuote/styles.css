@@ -4,11 +4,16 @@
 
 .buttonContainer {
     display: flex;
+    /*display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;*/
     /*align-self: space-between;*/
 }
 
 .quoteButton {
     margin-left: auto;
+    /*align-self: flex-end;*/
     background: #3B5998;
     color: #fff;
     padding: 7px;
@@ -31,6 +36,7 @@
 
 .twitterButton {
     margin-right: auto;
+    /*align-self: flex-start;*/
     background: #3B5998;
     color: #fff;
     padding: 7px;

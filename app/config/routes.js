@@ -6,8 +6,8 @@ const routes = (
   <BrowserRouter>
     <div>
       <Route path='/' component={MainContainer} />
-      <Route exact path ='/' component={HomeContainer} />
-      <Route exact path = '/randomQuote' component={randomQuoteContainer} />
+      <Route exact={true} path ='/' component={HomeContainer} />
+      <Route exact={true} path = '/randomQuote' component={randomQuoteContainer} />
       <Route path ='/error' component={HomeContainer} />
     </div>
   </BrowserRouter>

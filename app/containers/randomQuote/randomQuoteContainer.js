@@ -78,7 +78,7 @@ class RandomQuoteContainer extends React.Component {
           <button className={twitterButton}
             onClick={''}>{'Tweet!'}</button>
           <button className={quoteButton}
-            onClick={this.updateQuote}>{'Inspire Me!'}</button>
+            onClick={this.updateQuote}>{'Inspire!'}</button>
         </div>
       </div>
     );
